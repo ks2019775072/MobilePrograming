@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/money_raining" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_info_24"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:text="2019775072 홍유진" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/num1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/lottery_ball"
+            android:fontFamily="@font/pop"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/lottery_ball"
+            android:fontFamily="@font/pop"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/num3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/lottery_ball"
+            android:fontFamily="@font/pop"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/num4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/lottery_ball"
+            android:fontFamily="@font/pop"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/num5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/lottery_ball"
+            android:fontFamily="@font/pop"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/num6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/lottery_ball"
+            android:fontFamily="@font/pop"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lotteryButton"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/lottery_whirl" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
